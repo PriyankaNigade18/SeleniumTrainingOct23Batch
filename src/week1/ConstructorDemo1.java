@@ -27,6 +27,8 @@ public class ConstructorDemo1
 	{
 		//object 
 		
+		//MethodDemo.display();
+		
 		ConstructorDemo1 c1=new ConstructorDemo1();
 		
 		ConstructorDemo1 c2=new ConstructorDemo1(201,"Parag");
