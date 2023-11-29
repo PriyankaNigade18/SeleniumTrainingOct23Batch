@@ -31,6 +31,10 @@ public class CompileTimeParam
 		
 	}
 	
+	public String info(String msg)
+	{
+		return msg;
+	}
 	
 	
 	public static void main(String[] args) 
@@ -46,6 +50,9 @@ public class CompileTimeParam
 		//or
 		int result=c1.mul(10,10);
 		System.out.println("Multiplication result is: "+result);
+		
+		String data=c1.info("Hello All");
+		System.out.println("Message is: "+data);
 
 	}
 
