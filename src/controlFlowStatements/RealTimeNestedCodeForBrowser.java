@@ -40,7 +40,7 @@ public class RealTimeNestedCodeForBrowser {
 			System.out.println("Test case is executing on Edge");
 		}else
 		{
-			System.out.println("Please provide vallid browser name!");
+			System.out.println("Please provide valid browser name!");
 		}
 			
 			
