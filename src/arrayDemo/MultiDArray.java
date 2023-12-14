@@ -86,10 +86,30 @@ public class MultiDArray {
 		
 		System.out.println("*******************************************");
 		
+		Object records[][]={{"UserName","Password"},{"Admin","Admin123"},{"Pooja","test123"},{"Vijay","test123"}};
+		
+		System.out.println("Number of Rows: "+(records.length-1));//3
+		System.out.println("Number of Columns: "+records[0].length);//2
 		
 		
+		for(int i=0;i<records.length;i++)
+		{
+			for(int j=0;j<records[i].length;j++)
+			{
+				System.out.print(records[i][j]+"    ");
+			}
+			System.out.println();
+		}
 		
-		
+		System.out.println("***************Headings are skiped*****************");
+		for(int i=1;i<records.length;i++)
+		{
+			for(int j=0;j<records[i].length;j++)
+			{
+				System.out.print(records[i][j]+"    ");
+			}
+			System.out.println();
+		}
 		
 		
 		
