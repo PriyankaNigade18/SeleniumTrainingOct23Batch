@@ -21,6 +21,7 @@ public class SuperChild extends SuperParent
 	{
 		SuperChild c1=new SuperChild();
 		c1.childIncome();
+		
 
 
 	}
