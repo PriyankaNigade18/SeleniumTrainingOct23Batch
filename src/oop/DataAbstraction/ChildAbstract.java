@@ -33,6 +33,9 @@ public class ChildAbstract extends AbstractClassDemo
 		a1.accept();
 		a1.show();
 		
+		//scenario 3: parent ref and Parent object=Invalid
+		//scenario4: child ref and parent object=Invalid
+		
 		
 		
 		
