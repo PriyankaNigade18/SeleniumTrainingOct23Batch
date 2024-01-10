@@ -1,0 +1,251 @@
+Selenium WebDriver
+====================
+Selenium WebDriver is an API for webui automation testing
+Selenium WebDriver is it an interface
+
+Selenium setup
+================
+1.Using java project
+--------------------------
+1.Download selenium client library selenium.dev
+2.create a new project---> right click--->build project--->configure build--->libraries---->classpath--->add external library
+
+2.Using maven Project(Real)
+=====================
+Project & Build management tool
+
+POM.xml file
+=================
+Project Object model
+It is configuration file
+Project setup
+
+<project>
+
+<dependencies>
+<dependecy> selenium java</dependecy>
+</dependencies>
+
+</project>
+=============================
+
+Dependency===>is library file only
+
+
+Plugins need for maven execution 
+====================================
+1.compiler plugin
+2.surefire plugin
+
+Ways
+===========
+1.Simple maven
+2.Using maven-archetype(framework)-(maven-archetype-quickstart)
+
+==========================================================
+Test Case1: Validate google title
+
+step1: Open Google application in Browser
+step2: Get the actual title from Google
+step3: Compare actual versus expected title
+step4: As per validation print the result
+step5: close the brower
+
+=================================================================
+Browser Commands
+===================
+1.get()
+2.getTitle()
+3.getCurrentUrl()
+4.getPageSource()
+5.close()-close current active window
+6.quit()- quit close all open windows
+
+Navigation Commands
+=====================
+Selenium use Navigation Interface
+
+1.to(url)
+driver.navigate().to(url)
+
+2.back()
+driver.navigate().back()
+
+3.forward()
+driver.navigate().forward()
+
+4.refresh()
+driver.navigate().refresh()
+
+
+What is WebElement?
+=======================
+Any GUL control is called Webelement
+examples:
+textbox,checkbox,radiobutton,dropdown,link...etc
+
+In Selenium To interact these webelement we have WebElement Interface
+
+
+
+How to automate WebElement
+===================================
+1.Identify WebElement
+2.Perform action on that webElement
+
+1.Identify WebElement
+============================
+Selenium identifies webelement using Locator + Method
+
+What is Locator?
+==================
+Locator is an address of WebElement from WebPage
+
+Seleium Support total 8 locators
+====================================
+1.By id
+2.By name
+3.By className
+4.By linkText
+5.By partialLinkText
+6.By tagName
+
+Dynamic Locators
+==============
+7.By cssSelector
+8.By xpath
+
+
+What is By?
+==================
+In Selenium By is class
+Using By you can get the address
+
+To Identify that address selenium uses two methods
+=====================================================
+1.findElement()
+-----------------
+-findElement() will identify single webelement
+
+2.findElements()
+-------------------
+-findElements() will identify multiple similar webelements
+
+
+-------------------------------------------------------------------
+2.Perform action on that webElement
+========================================
+textbox,searchbox--->pass the data--->sendKeys("data",Keys.ENTER)
+To clear the data/text----->clear()
+link,button,checkbox,radio button--->click---->click()
+
+================================================================
+Validation on WebElement
+============================
+1.isDisplayed()
+2.isEnabled()
+3.isSelected()
+
+
+Link Automation <a>
+=============================
+<a id="SignIn" name="sign-in-link" class="nav-link" href="login.html">Sign In</a>
+
+1.By linkText (full text)
+----------------------
+driver.findElement(By.linkText(Sign In)).click();
+
+
+2.By partialLinkText(partial text)
+---------------------------
+driver.findElement(By.partialLinkText(In)).click();
+===========================================================
+By ClassName
+================
+/*
+		 * InvalidSelectorException: Compound class names not permitted
+		* class="btn     btn-default  btn-primary"
+		*        class1    class2      class3
+*/
+
+
+To open finder in DOM
+ctrl+f
+
+============================================================
+Synchronization is Selenium
+===============================
+
+
+
+
+
+
+
+
+
+
+
+
+Html basics
+===============
+
+link to be developed
+========================
+<a href="url" id="" name="">linkText</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
