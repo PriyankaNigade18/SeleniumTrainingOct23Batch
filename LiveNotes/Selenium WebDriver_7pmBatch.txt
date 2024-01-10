@@ -126,10 +126,14 @@ To Identify that address selenium uses two methods
 1.findElement()
 -----------------
 -findElement() will identify single webelement
+-findElement() returns single WebElement(I) object
+-findElement() throws exception NoSuchElementException if element not found
 
 2.findElements()
 -------------------
 -findElements() will identify multiple similar webelements
+-findElements() returns List<WebElement>
+-findElements() never throws any exception if element not found
 
 
 -------------------------------------------------------------------
@@ -145,6 +149,22 @@ Validation on WebElement
 1.isDisplayed()
 2.isEnabled()
 3.isSelected()
+
+
+WebElement methods
+======================
+1.getText()
+----------------
+It returns any visible text of an element
+getText() get the text of html inner text
+
+<tagname> text </tagname>
+
+
+2.getAttribute("attributename")
+------------------------------------
+This method return value for attribute
+
 
 
 Link Automation <a>
@@ -175,10 +195,39 @@ ctrl+f
 ============================================================
 Synchronization is Selenium
 ===============================
+It is time mapping between tool and application
+
+Static Wait
+==================
+Thread.sleep(2000);
+
+Selenium takes default/polling(interval) time 500ms 0.5 sec
+
+Dynamic wait
+================
+1.Implicit wait()
+================
+-Global wait applicable to all webelements in webpage
+-Apply implicit always after driver session
 
 
+driver.manage().timeOuts().implicitlyWait(Duration.ofSeconds(10));
 
 
+2.Explicit wait()
+===================
+- It can be apply to single webelement
+	In selenium we implement using
+	=---------------------------------
+		1.WebDriverWait class
+		2.FluentWait class
+		
+	WebDriverWait(c) extends FluentWait(c) implements Wait(Interface)	
+
+
+Assignment1: 
+=================
+Autoamte https://www.naukri.com/ page get the total links
 
 
 
