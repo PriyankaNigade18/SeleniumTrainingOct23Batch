@@ -327,13 +327,47 @@ Xpath Types
 Syntax:
 ==============
 //tagname[@attributename='value']
+//a[@class='nav-link']
 
 ===================================
-xpath with operator
+xpath with operator 
 ===================
+1.and
+-------------------
+Syntax:
+===========
+//tagname[@attribute1='value' and @attribute='value']
+
+//input[@class='form-control' and  @name="firstname"]
+
+
+
+2.or
+===============
+
+Syntax:
+===========
+//tagname[@attribute1='value' or @attribute='value']
+
+//input[@class='form-control' or @name="firstname"]
+
+
 
 xpath with indexing and position()
 ===================================
+indexing---->DOM--->1 of 1
+
+Syntax:
+==================
+(xpath)[index]
+
+position()
+==================
+(xpath)[position()=index]
+
+(//input[@class='form-control'])[position()=4]
+
+
 
 xpath Methods
 ==============
