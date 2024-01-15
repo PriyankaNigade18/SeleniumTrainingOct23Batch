@@ -367,10 +367,38 @@ position()
 
 (//input[@class='form-control'])[position()=4]
 
-
-
 xpath Methods
 ==============
+1.text()
+=============
+To get any visible text
+<a> text </a>
+<div> text </div>
+
+Syntax:
+========
+//tagname[text()='text']
+
+If text is written with white space the text() will not work
+
+
+
+2.normalize-space()-trim()
+======================
+get the text by ignoring white space 
+
+
+
+
+
+3.contains() partial matching
+=====================
+
+4.starts-With()
+
+
+
+
 
 xpath Axies
 =============
@@ -403,7 +431,14 @@ link to be developed
 <a href="url" id="" name="">linkText</a>
 
 
+To develop list
+========================
 
+<ul>List1--------Unordered list
+<li>C</li>-------list
+<li>C++</li>
+<li>java</li>
+</ul>
 
 
 
