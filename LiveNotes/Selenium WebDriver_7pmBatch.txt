@@ -387,25 +387,163 @@ If text is written with white space the text() will not work
 ======================
 get the text by ignoring white space 
 
-
+Syntax:
+========
+//tagname[normalize-space()='text']
 
 
 
 3.contains() partial matching
 =====================
 
-4.starts-With()
+Syntax:
+========
+//tagname[contains(@attribute,'partial value')]
 
+or
 
+//tagname[contains(text(),'partial text')]
 
+//input[@id='twotabsearchtextbox']
+//input[contains(@id,'searchtext')]
+
+4.starts-With(prefix)
+===============================
+Syntax:
+========
+//tagname[starts-with(@attribute,'partial value')]
+
+or
+
+//tagname[starts-with(text(),'partial text')]
+
+//input[starts-with(@id,'two')]
 
 
 xpath Axies
 =============
+1.ancestor
+-----------
 
+Syntax:
+==========
+//tagname[@attribute='value']//ancestor::tagname of ancestor
+
+2.parent
+============
+Syntax:
+==========
+//tagname[@attribute='value']//parent::tagname of  parent
+
+3.child
+============
+Syntax:
+==========
+//tagname[@attribute='value']//child::tagname of child
+
+4.following
+============
+Syntax:
+==========
+//tagname[@attribute='value']//following::tagname of following node
+
+5.preceding
+==============
+//tagname[@attribute='value']//preceding::tagname of preceding node
+6.following-sibling
+=======================
+Syntax:
+==========
+//tagname[@attribute='value']//following-sibling::tagname of sibling node
+
+7.preceding-sibling
+==============================
+Syntax:
+==========
+//tagname[@attribute='value']//preceding-sibling::tagname of sibling node
+================================================================
+<tbody>--------------ancestor
+<tr>---------------------------------parent
+ 
+    <td>4</td>------------------preceding-sibling
+
+      <td>John</td>-------------element
+
+      <td>Robinson</td>--------------following-sibling
+
+       <td>jr5527</td>--------------following-sibling
+ 
+      <td>
+              <a href="user.html"><i class="icon-pencil"></i></a>
+              <a role="button" href="#myModal" data-toggle="modal"><i class="icon-remove"></i></a>
+       </td>--------------following-sibling
+ </tr>
+ 
+ <tbody>
+ =========================================================
 
 SelectorsHub
 ==============
+
+
+Dropdown Automation
+======================
+
+
+
+Scenarios
+===============
+Handling alerts
+Handling frame
+Handling multiple Windows/tabs
+Handler calendar
+
+
+Actions class(Mouse/Keybord)
+=============================
+
+
+Framework
+================
+1.TestNG
+
+2.Cucumber
+
+
+Maven Project Execution
+=============================
+1.using pom.xml
+2.Using CLI
+3.USing Jenkins
+
+=====================Extra========================
+API testing
+==================
+Postman
+
+RestAssured
+
+
+Appium Mobile application testing
+
+SQL(database) 
+
+
+
+
+Jmeter/testrail(test case management)/JIRA /(recorded sessions)
+
+
+DEvops
+==============
+1.version control system
+	Git and Git hub
+	
+2.Jenkins
+	Run jobs
+	
+
+
 
 
 
