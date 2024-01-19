@@ -484,10 +484,35 @@ Syntax:
 
 SelectorsHub
 ==============
-
+email-id
 
 Dropdown Automation
 ======================
+1.Select tag based dropdown
+--------------------------
+In selenium we use Select class
+
+Select s1=new Select(dropdown locator)
+
+Is dropdown support multiple selection?
+isMultiple()
+
+Select single option
+-----------------------
+selectByValue()
+selectByVisibleText()
+selectByIndex()
+
+
+to get all options from dropdown
+--------------------------------
+getOptions()
+
+
+2.Bootstrap dropdown
+--------------------------
+xpath
+
 
 
 
