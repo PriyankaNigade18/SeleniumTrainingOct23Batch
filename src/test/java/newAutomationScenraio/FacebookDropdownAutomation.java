@@ -9,8 +9,29 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class FacebookDropdownAutomation {
-
+public class FacebookDropdownAutomation 
+{
+	//reusable method
+	public static void selectBasedDropdown(WebElement dele,String value)
+	{
+		Select dd=new Select(dele);
+		System.out.println("Is dropdown support multiple selection?: "+dd.isMultiple());
+		
+		List<WebElement> allopt=dd.getOptions();
+		System.out.println("Total options are: "+allopt.size());
+		
+		
+		for(WebElement i:allopt)
+		{
+			System.out.println(i.getText());
+			if(i.getText().contains(value))
+			{
+				i.click();
+				break;
+			}
+			
+		}
+	}
 	public static void main(String[] args) {
 
 		WebDriver driver=new ChromeDriver();
@@ -24,45 +45,61 @@ public class FacebookDropdownAutomation {
 		//get the dropdown day
 		
 		WebElement dayele=driver.findElement(By.id("day"));
-		
-		Select daydd=new Select(dayele);
-		System.out.println("Is dropdown support multiple selection?: "+daydd.isMultiple());
-		
-		List<WebElement> allOptions=daydd.getOptions();
-		System.out.println("Total options are: "+allOptions.size());
-		
-		
-		for(WebElement i:allOptions)
-		{
-			System.out.println(i.getText());
-			if(i.getText().contains("27"))
-			{
-				i.click();
-				break;
-			}
-			
-		}
+		selectBasedDropdown(dayele,"27");
 		
 		
 		//month dropdown
 		WebElement monthele=driver.findElement(By.id("month"));
-		Select monthdd=new Select(monthele);
-		System.out.println("Is dropdown support multiple selection?: "+monthdd.isMultiple());
+		selectBasedDropdown(monthele,"Dec");
+	
+		//year
+			WebElement yearele=driver.findElement(By.id("year"));
+			selectBasedDropdown(yearele,"2010");
+	
+	
+	
+	
+	
+	
+	
 		
-		List<WebElement> allopt=monthdd.getOptions();
-		System.out.println("Total options are: "+allopt.size());
+//		Select daydd=new Select(dayele);
+//		System.out.println("Is dropdown support multiple selection?: "+daydd.isMultiple());
+//		
+//		List<WebElement> allOptions=daydd.getOptions();
+//		System.out.println("Total options are: "+allOptions.size());
+//		
+//		
+//		for(WebElement i:allOptions)
+//		{
+//			System.out.println(i.getText());
+//			if(i.getText().contains("27"))
+//			{
+//				i.click();
+//				break;
+//			}
+//			
+//		}
+//		
 		
 		
-		for(WebElement i:allopt)
-		{
-			System.out.println(i.getText());
-			if(i.getText().contains("Dec"))
-			{
-				i.click();
-				break;
-			}
-			
-		}
+//		Select monthdd=new Select(monthele);
+//		System.out.println("Is dropdown support multiple selection?: "+monthdd.isMultiple());
+//		
+//		List<WebElement> allopt=monthdd.getOptions();
+//		System.out.println("Total options are: "+allopt.size());
+//		
+//		
+//		for(WebElement i:allopt)
+//		{
+//			System.out.println(i.getText());
+//			if(i.getText().contains("Dec"))
+//			{
+//				i.click();
+//				break;
+//			}
+//			
+//		}
 		
 		
 		

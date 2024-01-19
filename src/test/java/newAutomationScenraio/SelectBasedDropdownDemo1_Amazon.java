@@ -9,6 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import helper.Utility;
+
 public class SelectBasedDropdownDemo1_Amazon {
 
 	public static void main(String[] args) throws InterruptedException
@@ -22,6 +24,13 @@ public class SelectBasedDropdownDemo1_Amazon {
 		//dropdown address
 		WebElement dele=driver.findElement(By.name("url"));
 		
+		Utility.selectBasedDropdown(dele,"Books");
+		
+		
+		
+		
+		
+		/*
 		//select class
 		Select sc=new Select(dele);
 		
@@ -50,7 +59,7 @@ public class SelectBasedDropdownDemo1_Amazon {
 		}
 		
 		
-		
+		*/
 		
 		
 		

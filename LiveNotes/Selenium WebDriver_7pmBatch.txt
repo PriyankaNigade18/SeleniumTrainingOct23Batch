@@ -508,20 +508,58 @@ to get all options from dropdown
 --------------------------------
 getOptions()
 
-
+=======================================
 2.Bootstrap dropdown
 --------------------------
 xpath
 
+
+Capabilities(setup browser)
+===============================
+
+To customize browser session we can use browser based class
+Chrome----->ChromeOptions  class
+edge------->EdgeOptions class
+firefox---->FirefoxOptions class
+
+
+https://chromedriver.chromium.org/capabilities
 
 
 
 Scenarios
 ===============
 Handling alerts
+================
+Types
+--------
+1.alert with ok
+2.alert with ok and cancel
+3.prompt alert
+
+Selenium provides Alert interface
+-----------------------------------------
+Methods 
+----------
+1.accept()=====>ok
+2.dismiss()=====>cancel
+3.getText()======>to capture text of alert
+4.sendKeys()=====>pass data to alert
+
+
+
+
+
+
 Handling frame
+===================
+
 Handling multiple Windows/tabs
+===============================
+
 Handler calendar
+======================
+
 
 
 Actions class(Mouse/Keybord)
