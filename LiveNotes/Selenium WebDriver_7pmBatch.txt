@@ -545,17 +545,38 @@ Methods
 2.dismiss()=====>cancel
 3.getText()======>to capture text of alert
 4.sendKeys()=====>pass data to alert
-
-
-
-
-
-
+=======================================================
 Handling frame
 ===================
+Html document embeded into html document
+
+<frame>
+<iframe>
+Types
+========
+1.Simple
+2.Nested
+
+driver.switchTo.frame();
+
+ways
+========
+1.using index
+2.using id/name
+3.using webElement
+====================================================
 
 Handling multiple Windows/tabs
 ===============================
+
+getWindowHandle()
+getWindowHandles()
+
+switchTo.window()
+
+
+
+
 
 Handler calendar
 ======================
