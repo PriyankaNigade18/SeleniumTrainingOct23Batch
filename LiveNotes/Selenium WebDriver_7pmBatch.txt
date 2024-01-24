@@ -217,6 +217,7 @@ driver.manage().timeOuts().implicitlyWait(Duration.ofSeconds(10));
 2.Explicit wait()
 ===================
 - It can be apply to single webelement
+
 	In selenium we implement using
 	=---------------------------------
 		1.WebDriverWait class
@@ -224,7 +225,7 @@ driver.manage().timeOuts().implicitlyWait(Duration.ofSeconds(10));
 		
 	WebDriverWait(c) extends FluentWait(c) implements Wait(Interface)	
 
-
+================================================================================
 Assignment1: 
 =================
 Autoamte https://www.naukri.com/ page get the total links
@@ -574,10 +575,13 @@ getWindowHandles()
 
 switchTo.window()
 
+----------------------
+newWindow() return new WebDriver object
+new window/new tab
 
+driver.switch().newWindow(WindowType.TAB);
 
-
-
+-------------------------------------------------------
 Handler calendar
 ======================
 
