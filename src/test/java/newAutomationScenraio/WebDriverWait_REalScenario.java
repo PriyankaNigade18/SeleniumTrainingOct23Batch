@@ -22,6 +22,9 @@ public class WebDriverWait_REalScenario {
 	
 	//driver.findElement(startbtn).click();
 	
+	boolean statusUrl=Utility.waitForUrl(driver,"internet");
+	System.out.println("Status of url is: "+statusUrl);
+	
 	Utility.waitForElementToClick(driver,startbtn).click();
 	WebElement ele=Utility.waitForPresenceEle(driver,text);
 	
