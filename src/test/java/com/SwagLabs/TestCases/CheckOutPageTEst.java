@@ -2,8 +2,11 @@ package com.SwagLabs.TestCases;
 
 import org.testng.annotations.Test;
 
-public class CheckOutPageTEst {
+public class CheckOutPageTEst extends BaseClass
+{
   @Test
-  public void f() {
+  public void validateContinueProcess() 
+  {
+	  cp.doContinue("Priyanka","Nigade","411047");
   }
 }

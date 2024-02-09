@@ -3,6 +3,8 @@ package com.SwagLabs.Pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.SwagLabs.Utilities.Utility;
+
 public class LoginPage 
 {
 	
@@ -37,6 +39,7 @@ public class LoginPage
 	{
 		driver.findElement(usern).sendKeys(un);
 		driver.findElement(pas).sendKeys(psw);
+		Utility.getScreenshot(driver);
 		driver.findElement(btn).click();
 	}
 

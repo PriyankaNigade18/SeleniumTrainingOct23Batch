@@ -17,10 +17,17 @@ public class AddToCartPage
 	private By rbtn=By.xpath("//button[text()='Remove']");
 	private By cbtn=By.id("continue-shopping");
 	private By chbtn=By.id("checkout");
+	private By cart=By.id("shopping_cart_container");
 	
 	
 	
 	//methods
+	public void getCartPage()
+	{
+		driver.findElement(cart).click();
+		System.out.println("Cart page is open!");
+	}
+	
 	public void doRemove()
 	{
 		driver.findElement(rbtn).click();
